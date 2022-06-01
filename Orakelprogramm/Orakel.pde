@@ -4,23 +4,21 @@ class Orakel
 
     Orakel()
     {
-       sprueche = new String[5];
+       sprueche = new String[2];
        spruecheEintragen();
     }
 
     void spruecheEintragen()
     {
        sprueche[0] = "Lieber nicht!";
-       sprueche[1] = "Mach nur!";
-       sprueche[2] = "Auf jeden Fall!";
-       sprueche[3] = "Nein! Tu das nicht!";
-       sprueche[4] = "Wenn du meinst?";
+       sprueche[1] = "Nein! Tu das nicht!";
     }
  
     String neuerSpruch()
     {
-       // Erzeuge eine Zufallszahl zwischen 0 und 5:
+       // Erzeuge eine Zufallszahl zwischen 0 und 1:
        // Gib diesen Spruch zurueck!
-       return sprueche[0];
+       int zufallszahl = (int)random(2);
+       return sprueche[zufallszahl];
     }
 }

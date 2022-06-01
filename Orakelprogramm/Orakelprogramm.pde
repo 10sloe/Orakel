@@ -5,7 +5,7 @@ void setup()
 {
   o = new Orakel();
   size(800,200);
-  textSize(30);
+  
   fill(0);
   spruch = "..............";
 }
@@ -13,8 +13,11 @@ void setup()
 void draw()
 {
   background(200);
-  text("Soll ich ....... ?",20,80);
-  text(spruch,40,150);  
+  textSize(20);
+  text("Soll ich ....... ?",20,60);
+  text("(Klicke für eine Antwort!)",20,100);
+  textSize(30);
+  text(spruch,100,150);  
 }
 
 void mouseClicked()
